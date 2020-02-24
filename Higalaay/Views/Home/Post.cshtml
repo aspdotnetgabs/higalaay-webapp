@@ -1,0 +1,48 @@
+﻿@{
+    Layout = null;
+}
+
+
+
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Post</title>
+	
+</head>
+
+<body>
+
+	<div class="container">
+		<form action="/home/post" method="post">
+		
+		  <div class="form-group">
+		    <label>Title:</label>
+		    <input type="text" name="Title" class="form-control">
+		  </div>
+		  
+		  <div class="form-group">
+		    <label>Content:</label>
+		    <input type="text" name="Content" class="form-control">
+		  </div>	  
+		  
+		  <div class="form-group">
+		    <label>Username:</label>
+		    <input type="text" name="UserId" class="form-control" value="@ViewBag.UserId">
+		  </div>	
+
+		  <div class="form-group">
+		    <label>Fullname:</label>
+		    <input type="text" name="FullName" class="form-control" value="@ViewBag.FullName">
+		  </div>	
+
+		  <button type="submit" class="btn btn-primary">Submit</button>
+		  
+		</form>	
+	
+	</div>
+
+</body>
+</html>
